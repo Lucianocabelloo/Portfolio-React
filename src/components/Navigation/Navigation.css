@@ -1,0 +1,12 @@
+nav{
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    gap: 8px;
+}
+
+nav ul li {
+    cursor: pointer;
+}

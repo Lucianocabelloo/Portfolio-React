@@ -1,0 +1,24 @@
+body {
+  background: url(./assets/bg.jpeg);
+
+}
+
+.App{
+  margin: 0px 86px;
+}
+
+img {
+  border-radius: 25% 15% 5% 25%;
+}
+
+nav{
+  justify-content: space-between !important;
+}
+
+span{
+  background: -webkit-linear-gradient(183deg, #8E43AD, #299fff, rgb(213, 2, 2));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
+}
