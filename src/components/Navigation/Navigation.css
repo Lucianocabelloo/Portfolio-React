@@ -10,3 +10,9 @@ nav ul {
 nav ul li {
     cursor: pointer;
 }
+
+nav ul :hover {
+    color: #f5f5f551;
+}
+
+

@@ -18,7 +18,7 @@ const Navigation = () => {
           </Imagen>
           <div>
           <ul>
-            <li>Inicio</li>
+            <li className='Active'>Inicio</li>
             <li>Sobre Mi</li>
             <li>Proyectos</li>
             <li>Skills</li>
