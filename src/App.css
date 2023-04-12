@@ -250,4 +250,35 @@ header{
 }
  
 
+@media (max-width: 390px){
 
+.App{
+  padding: 36px;
+}
+
+.project h2{
+  font-size: 40px;
+}
+.project p{
+  font-size: 25px;
+}
+
+.img-Perfil{
+  height: 350px;
+}
+.boton{
+  padding: 16px;
+}
+
+.Section-Contact{
+  height: 100vh;
+}
+
+.Contact-Info{
+  width: 100%;
+}
+
+.Contact-Form{
+  width: 100%;
+}
+}
