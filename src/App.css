@@ -37,11 +37,16 @@ header{
   color: white;
   border: 1px solid black;
   min-width: 25%;
-  max-width: 200px;
+  max-width: 100%;
   padding: 12px 6px;
-
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
 }
-
 
 .About-Container{
   padding: 45px;
@@ -207,6 +212,9 @@ header{
     width: 100% !important;
    }
 
+   .boton{
+    width: 100%;
+   }
    
 
   .Skills-Icons{
@@ -235,6 +243,9 @@ header{
 
   .Contact-Info{
     gap: 20px;
+  }
+  .Boton-UP{
+    display: none;
   }
 }
  
