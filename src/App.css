@@ -256,6 +256,10 @@ header{
   padding: 36px;
 }
 
+.Section-Title{
+  font-size: 60px;
+}
+
 .project h2{
   font-size: 40px;
 }
