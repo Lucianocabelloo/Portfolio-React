@@ -21,43 +21,39 @@ const Section = styled.div`
 const Contact = () => {
 
   const form = useRef()
+  const nameInput = useRef(null);
+  const emailInput = useRef(null);
+  const messageInput = useRef(null);
 
+  const clearInputs = () => {
+    nameInput.current.value = '';
+    emailInput.current.value = '';
+    messageInput.current.value = '';
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!form.current.checkValidity()) {
-      // Si hay campos inválidos, muestra un mensaje de error
-      toast.error('Por favor completa los campos correctamente.', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-      return;
-    }
 
       emailjs.sendForm('service_hew07vr', 'template_tpxoaye', form.current, '5c3yyGWTDPm-Ml70x')
         .then((result) => {
+          clearInputs()
             console.log(result.text);
        }, (error) => {
             console.log(error.text);
         });
 
-
-      toast.success('Mensaje Enviado!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
+        
+        toast.success('Mensaje Enviado!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
         });
+        
   }
 
   return (
@@ -71,11 +67,11 @@ const Contact = () => {
       </div>
         <form ref={form} onSubmit={sendEmail} className='Contact-Form' >
 
-          <input className="input-text" type="text" name='user_name' placeholder='Ingrese nombre' required  />
+          <input className="input-text" type="text" name='user_name' placeholder='Ingrese nombre' required ref={nameInput} />
 
-          <input className="input-text" type="text" name='user_email' placeholder='Ingrese su correo' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  />
+          <input className="input-text" type="text" name='user_email' placeholder='Ingrese su correo' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ref={emailInput} />
 
-          <textarea className='input-area' name='message' placeholder='Ingresa el mensaje' required ></textarea>
+          <textarea className='input-area' name='message' placeholder='Ingresa el mensaje' required ref={messageInput} ></textarea>
           <button className='Contact-Button'> Enviar </button>
         </form>
         <ToastContainer />

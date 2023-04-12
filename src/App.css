@@ -250,10 +250,10 @@ header{
 }
  
 
-@media (max-width: 390px){
+@media (max-width: 480px ){
 
 .App{
-  padding: 36px;
+  padding: 36px !important;
 }
 
 .Section-Title{
