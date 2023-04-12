@@ -90,8 +90,8 @@ const Home = () => {
         <p>No busco solo desarrollar páginas web, sino crear experiencias digitales únicas para los usuarios..</p>
         
         <Buttons>
-        <a className='boton' href="https://drive.google.com/file/d/1YNYqj0W0XHnunH8hnI8ek-9SLgMswCIE/view?usp=sharing"> <img src="src\assets\document-download-svgrepo-com.svg" alt="Document Download SVG File" title="Document Download SVG File" width="25" height="25"></img>Descargar CV</a>
-        <a className='boton' href="https://github.com/Lucianocabelloo"> <img className='svg-boton' alt="Github" class="github" height="25" src="src\assets\github-142-svgrepo-com.svg" width="25"></img> GitHub  </a>
+        <a className='boton' href="https://drive.google.com/file/d/1YNYqj0W0XHnunH8hnI8ek-9SLgMswCIE/view?usp=sharing"> <img src="../../assets/download.svg" alt="Document Download SVG File" title="Document Download SVG File" width="25" height="25"></img>Descargar CV</a>
+        <a className='boton' href="https://github.com/Lucianocabelloo"> <img className='svg-boton' alt="Github" class="github" height="25" src="src\assets\github.svg" width="25"></img> GitHub  </a>
         </Buttons>
       </Left>
       <Right className='Section-Right'>
