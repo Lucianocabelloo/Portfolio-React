@@ -5,6 +5,8 @@ import Home from './components/Home/Home';
 import Proyects from './components/Proyects/Proyects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
+import { BsArrowUpCircleFill } from "react-icons/bs"
+
 
 
 
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
+      <Container className='Container-App'>
         <header>
         <Home/>
         </header>
@@ -37,6 +39,7 @@ function App() {
         <About/>
         <Proyects/>
         <Skills/>
+    <a className='Boton-UP' href="#Inicio"> <BsArrowUpCircleFill/> </a>
         <Contact/>
 
         </main>

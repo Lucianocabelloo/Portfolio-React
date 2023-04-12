@@ -88,7 +88,7 @@ const Proyects = () => {
 
 
   return (
-    <Section>
+    <Section id='Proyects'>
        <section className="project" id="project">
       <Container>
         <Row>

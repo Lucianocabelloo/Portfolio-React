@@ -11,6 +11,8 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30vh 0px;
+}
 `;
 
 const Left = styled.div`
@@ -37,15 +39,15 @@ display: flex;
 const About = () => {
   return (
     <>
-    <Section>
+    <Section id='About' className='About-Section'>
       <div className='About-Container'>
 
-      <Left>
+      <Left className='About-Left'>
       <img src={img} alt="" />
       </Left>
-      <Right>
-      <h2>Sobre mi</h2>
-      <p>Soy un programador Front End apasionado por el desarrollo web y siempre me mantengo actualizado con las últimas tecnologías. Me considero una persona proactiva, enfocada en brindar soluciones rápidas y efectivas. Disfruto trabajando en equipo y colaborando con otros desarrolladores y diseñadores para encontrar soluciones creativas. Estoy comprometido en mejorar la experiencia del usuario y siempre estoy buscando formas innovadoras para resolver cualquier desafío.</p>
+      <Right className='About-Right'>
+      <h2 className='Title'>Sobre mi</h2>
+      <p className='About'>Soy un programador Front End apasionado por el desarrollo web y siempre me mantengo actualizado con las últimas tecnologías. Me considero una persona proactiva, enfocada en brindar soluciones rápidas y efectivas. Disfruto trabajando en equipo y colaborando con otros desarrolladores y diseñadores para encontrar soluciones creativas. Estoy comprometido en mejorar la experiencia del usuario y siempre estoy buscando formas innovadoras para resolver cualquier desafío.</p>
       </Right>
       
       </div>

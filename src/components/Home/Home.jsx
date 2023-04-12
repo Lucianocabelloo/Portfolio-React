@@ -34,11 +34,12 @@ export function useStyles () {
   align-items: baseline;
   `
   
-  const Tittle = styled.div`
+  const Tittle = styled.h1`
   font-weight: 900;
       font-style: italic;
       color: #FAFAFA;
       font-size: 86px;
+      font-family: roboto;
       `
   
   const SubTittle = styled.div`
@@ -55,6 +56,7 @@ export function useStyles () {
   gap: 16px;
   align-items: center;
   width: 100%;
+  margin: 16px 0;
   `
   
   const Imagen = styled.div`
@@ -81,18 +83,18 @@ const Home = () => {
   return (
     <>
         <Navigation/>
-    <Section>
-      <Left>
-        <Tittle>Luciano Cabello</Tittle>
-        <SubTittle>Soy <span>Front End Developer</span></SubTittle>
+    <Section id='Inicio' className='Section-Home'>
+      <Left className='Section-Left'>
+        <Tittle className='Section-Title'>Luciano Cabello</Tittle>
+        <SubTittle className='Section-SubTitle'>Soy <span>Front End Developer</span></SubTittle>
         <p>No busco solo desarrollar páginas web, sino crear experiencias digitales únicas para los usuarios..</p>
         <Buttons>
         <button className='boton'>Contact me</button>
         <button className='boton'>GitHub</button>
         </Buttons>
       </Left>
-      <Right>
-        <Imagen>
+      <Right className='Section-Right'>
+        <Imagen className='Section-Imagen' >
         <img className='img-Perfil' src={fotoDePerfil} alt="Esta es la foto de perfil de Luciano Cabello"/>
         </Imagen>
         </Right>

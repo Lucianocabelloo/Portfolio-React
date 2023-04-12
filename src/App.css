@@ -1,3 +1,5 @@
+
+
 body {
   background: url(./assets/banner-bg.png);
 
@@ -32,9 +34,12 @@ header{
   21px 17.8px 17.9px rgba(0, 0, 0, 0.073),
   72px 61px 80px rgba(0, 0, 0, 0.17);
   background-color: deeppink;
+  color: white;
   border: 1px solid black;
   min-width: 25%;
   max-width: 200px;
+  padding: 12px 6px;
+
 }
 
 
@@ -43,14 +48,11 @@ header{
     display: flex;
     height: 70%;
     width: 100%;
-    border: 1px solid rgba(57, 13, 114, 0.392);
-    border-radius: 45px;
-    box-shadow:
-    5.7px 4.8px 5.3px rgba(0, 0, 0, 0.047);
-    background: rgba(0, 0, 0, 0.272);
+    background-color: rgba(0, 0, 0, 0.372);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    gap: 80px;
 }
 
 .ListOfProyects{
@@ -60,59 +62,181 @@ header{
   width: 100%;
 }
 
+.Boton-UP{
+  font-size: 50px;
+  position: fixed;
+  top: 80vh;
+  right: 50px;
+}
 
-
-/* Medias Querys
-Section{
+.Section-Skills{
+  display: flex;
   flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin: 32px;
-},
-
-Left{
+  align-items: center;
   justify-content: center;
-    width: 100%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.372);
+ }
+
+.Skills-Icons{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 48px;
-},
+    gap: 30px;
+}
 
-Tittle{
-  font-weight: 900;
-    font-style: italic;
-    color: rgb(250, 250, 250);
-    font-size: 3rem;
-  },
-
-  Subtittle{
-    font-weight: 500;
-    font-style: italic;
-    color: rgb(250, 250, 250);
-    font-size: 36px;
-  },
-  p{
+.Skills-Title{
+  font-size: 60px;
+    font-weight: 700;
     text-align: center;
-  },
+    color: white;
+    margin: 16px;
+}
 
-  Buttons{
-    width: 300px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  },
-  Boton{
-    height: 100%;
-  },
+.Section-Contact{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
 
-  Imagen{
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-  },
+.Contact-Info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.Contact-Form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-text{
+  width: 75%;
+  text-align: center;
+}
+
+.input-area{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.Contact-Button{
+  width: 40%;
+    padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .Nav-Div{
+    display: none;
+  }
+  .Container-App{
+    scroll-snap-type: none !important;
+  }
+  .Section-Home{
+    flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin: 200px 0px;
+  }
   
+  .Section-Left{
+    justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 0px;
+  }
+
+  .Section-Right{
+    width: 100% !important;
+  }
+  
+  .Section-Title{
+    font-weight: 900;
+      font-style: italic;
+      color: rgb(250, 250, 250);
+      font-size: 1rem;
+    }
+
+    
+   .img-Perfil{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+   }
+   .About-Section{
+    margin: 30px 0px !important;
+    height: 100%;
+   }
+
+   .About-Container{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+   }
+
+   .Title{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+   }
+
+   .About-Left{
+    width: 100% !important;
+    height: 100% !important ;
+   }
+   .About-Right{
+    width: 100% !important;
+    height: 100% !important ;
+   }
+
+   p{
+    font-size: 16px;
+   }
+
+   .project p {
+    width: 100% !important;
+   }
+
+   
+
+  .Skills-Icons{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .SVG-Icon{
+    height: 300px;
+    width: 300px;
+  }
+
+  .Section-Contact{
+  flex-direction: column !important;
+  gap: 30px;
+  margin-top: 10% !important;
+  }
+
+  .Contact-Button{
+    width: 80%;
+      padding: 16px;
+  }
+
+  .Contact-Info{
+    gap: 20px;
+  }
+}
+ 
 
 
-
-*/

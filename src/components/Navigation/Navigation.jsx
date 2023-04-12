@@ -11,18 +11,18 @@ const Imagen = styled.div`
 
 const Navigation = () => {
   return (
-    <div>
+    <div className='Nav-Div'>
         <nav>
           <Imagen>
             <img src={logo} alt="logo ELECE" />
           </Imagen>
           <div>
           <ul>
-            <li className='Active'>Inicio</li>
-            <li>Sobre Mi</li>
-            <li>Proyectos</li>
-            <li>Skills</li>
-            <li>Contacto</li>
+            <li className='Active'> <a href="#">Inicio</a> </li>
+            <li> <a href="#About"> Sobre Mi </a> </li>
+            <li> <a href="#Proyects"> Proyectos </a></li>
+            <li> <a href="#Skills">Skills</a></li>
+            <li> <a href="#Contact"> Contacto </a></li>
           </ul>
           </div>
         </nav>
