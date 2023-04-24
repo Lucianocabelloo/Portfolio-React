@@ -7,9 +7,9 @@ const ProyectCards = ({title, img, description ,tecnology}) => {
         <div className='proj-imgbx'> 
             <img src={img} />
             <div className='proj-txtx'>
-                <h4>{title}</h4>
-                <h5>{description}</h5>
-                <p>{tecnology}</p>
+                <h4 className='Proyect-title'>{title}</h4>
+                <h5 className='Proyect-Description'>{description}</h5>
+                <p className='Proyect-Tecnology'>{tecnology}</p>
             </div>
         </div>
     </Col>

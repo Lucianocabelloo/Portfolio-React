@@ -68,7 +68,7 @@ import "./proyects.css"
   id: 8,
   title: 'Cat Meme Generator',
   description: 'En este proyecto utilice diversas tecnologias para poder realizar una Generador de Memes',
-  tecnology: "React, HTML, CSS,Javascript",
+  tecnology: "React, HTML, CSS, Javascript",
   img: proyecto8
 },
 
