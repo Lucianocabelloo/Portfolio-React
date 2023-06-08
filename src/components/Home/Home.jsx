@@ -92,7 +92,7 @@ const Home = () => {
         <p>No busco solo desarrollar páginas web, sino crear experiencias digitales únicas para los usuarios..</p>
         
         <Buttons>
-        <a className='boton' href="https://drive.google.com/file/d/1YNYqj0W0XHnunH8hnI8ek-9SLgMswCIE/view?usp=sharing"> <img src={download} alt="Document Download SVG File" title="Document Download SVG File" width="50" height="50"></img>Descargar CV</a>
+        <a className='boton'> <img src={download} alt="Document Download SVG File" title="Document Download SVG File" width="50" height="50"></img>Descargar CV</a>
         <a className='boton' href="https://github.com/Lucianocabelloo"> <img className='svg-boton' alt="Github" class="github" height="50" src={github} width="50"></img> GitHub  </a>
         </Buttons>
       </Left>
